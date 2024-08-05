@@ -51,8 +51,8 @@ def generate_test_case_data(settings: Dict, testcase_path: Path, type: str):
     claims = {}
     if include_default_claims:
         claims = {
-            "iss": settings["identifiers"]["issuer"],
-            "iat": settings["iat"],
+            #"iss": settings["identifiers"]["issuer"],
+            #"iat": settings["iat"],
             "exp": settings["exp"],
         }
 

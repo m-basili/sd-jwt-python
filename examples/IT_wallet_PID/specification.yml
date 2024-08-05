@@ -1,0 +1,31 @@
+user_claims:
+  iss: https://pidprovider.example.org
+  sub: NzbLsXh8uDCcd7noWXFZAfHkxZsRGC9Xs
+  !sd iat: 1683000000
+  exp: 1883000000
+  status: 
+    status_assertion: 
+        credential_hash_alg: sha-256
+  vct: https://pidprovider.example.org/v1.0/personidentificationdata
+  vct#integrity: sha256-WRL5ca_xGgX3c1VLmXfh-9cLlJNXN-TsMk-PmKjZ5t0
+  verification:
+    auth_trust_framework: eidas
+    loa: "4"
+    auth_method: cie
+  !sd unique_id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+  !sd given_name: Mario
+  !sd family_name: Rossi
+  !sd birth_date: "1980-01-10"
+  !sd tax_id_code: TINIT-XXXXXXXXXXXXXXXX
+
+holder_disclosed_claims:
+  {
+    "iat": null, 
+    "unique_id": null,
+    "given_name": null,
+    "family_name": null,
+    "birth_date": null,
+    "tax_id_code": null,
+  }
+
+key_binding: True

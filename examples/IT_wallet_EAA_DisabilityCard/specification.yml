@@ -1,0 +1,30 @@
+user_claims:
+  iss: https://issuer.example.org
+  sub: NzbLsXh8uDCcd7noWXFZAfHkxZsRGC9Xs
+  !sd iat: 1683000000
+  exp: 1883000000
+  status: 
+    status_attestation: 
+        credential_hash_alg: sha-256
+  vct: DisabilityCard
+  !sd document_number: XXXXXXXXXX
+  !sd given_name: Mario
+  !sd family_name: Rossi
+  !sd birth_date: "1980-01-10"
+  !sd expiry_date: "2024-01-01"
+  !sd tax_id_code: TINIT-XXXXXXXXXXXXXXXX
+  !sd constant_attendance_allowance: True
+
+holder_disclosed_claims:
+  {
+    "iat": null,
+    "document_number": null,
+    "given_name": null,
+    "family_name": null,
+    "birth_date": null,
+    "expiry_date": null,
+    "tax_id_code": null,
+    "constant_attendance_allowance": null
+  }
+
+key_binding: True
