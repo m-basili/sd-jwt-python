@@ -42,7 +42,7 @@ class SDJWTHasSDClaimException(Exception):
 
 class SDJWTCommon:
     SD_JWT_HEADER = os.getenv(
-        "SD_JWT_HEADER", "example+sd-jwt"
+        "SD_JWT_HEADER", "vc+sd-jwt"
     )  # overwriteable with extra_header_parameters = {"typ": "other-example+sd-jwt"}
     KB_JWT_TYP_HEADER = "kb+jwt"
     HASH_ALG = {"name": "sha-256", "fn": sha256}

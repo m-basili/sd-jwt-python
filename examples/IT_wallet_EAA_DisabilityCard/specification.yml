@@ -4,9 +4,14 @@ user_claims:
   !sd iat: 1683000000
   exp: 1883000000
   status: 
-    status_attestation: 
+    status_assertion: 
         credential_hash_alg: sha-256
-  vct: DisabilityCard
+  vct: https://issuer.example.org/v1.0/disabilitycard
+  vct#integrity: 2e40bcd6799008085ffb1a1f3517efee335298fd976b3e655bfb3f4eaa11d171
+  verification:
+    auth_trust_framework: eidas
+    loa: "high"
+    auth_method: cie
   !sd document_number: XXXXXXXXXX
   !sd given_name: Mario
   !sd family_name: Rossi

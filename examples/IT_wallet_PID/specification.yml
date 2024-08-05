@@ -7,10 +7,10 @@ user_claims:
     status_assertion: 
         credential_hash_alg: sha-256
   vct: https://pidprovider.example.org/v1.0/personidentificationdata
-  vct#integrity: sha256-WRL5ca_xGgX3c1VLmXfh-9cLlJNXN-TsMk-PmKjZ5t0
+  vct#integrity: 55f5fe57f1e491d49f33672784528532d9d257016d4c68f17e55fe4e1520e45e
   verification:
     auth_trust_framework: eidas
-    loa: "4"
+    loa: "high"
     auth_method: cie
   !sd unique_id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
   !sd given_name: Mario
